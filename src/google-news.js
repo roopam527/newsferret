@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import { Card,CardDeck } from 'react-bootstrap'
 import './App.css'
 
-class googleNews extends Component{
+class GoogleNews extends Component{
     constructor(properties){
         super(properties);
         this.state = {
@@ -49,4 +49,4 @@ class googleNews extends Component{
     }
 }
 
-export default googleNews
+export default GoogleNews

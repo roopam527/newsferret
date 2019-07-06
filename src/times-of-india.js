@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import { Card,CardDeck } from 'react-bootstrap'
 import './App.css'
 
-class timesOfIndia extends Component{
+class TimesOfIndia extends Component{
     constructor(properties){
         super(properties);
         this.state = {
@@ -49,4 +49,4 @@ class timesOfIndia extends Component{
     }
 }
 
-export default timesOfIndia
+export default TimesOfIndia

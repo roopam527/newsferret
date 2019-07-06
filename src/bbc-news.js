@@ -2,12 +2,16 @@ import React,{Component} from 'react'
 import { Card,CardDeck } from 'react-bootstrap'
 import './App.css'
 
-class bbcNews extends Component{
+class BbcNews extends Component{
     constructor(properties){
         super(properties);
         this.state = {
           articles:[]
         }
+      }
+
+      componentWillMount(){
+        console.log("Hello")
       }
       componentDidMount(){
         fetch('https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=d2e0631056324fcbad6ee8d0c3f665ac')
@@ -24,9 +28,12 @@ class bbcNews extends Component{
     render(){
         return(
             <div className='App'>
+             
             {this.state.articles.map((item,index)=>{
               return(
                      <div>
+
+                       
                             <CardDeck>
                             <div class='col-lg-3'></div>
                               <div class='col-lg-6'>
@@ -49,4 +56,4 @@ class bbcNews extends Component{
     }
 }
 
-export default bbcNews
+export default BbcNews
